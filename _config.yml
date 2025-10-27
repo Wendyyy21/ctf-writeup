@@ -69,6 +69,12 @@ author:
 
 footer:
   links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Wendyyy21"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://www.linkedin.com/in/wendy-khong-wenxin/"
 
 defaults:
   # _posts
