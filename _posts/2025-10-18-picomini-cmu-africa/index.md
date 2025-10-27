@@ -16,6 +16,6 @@ Here are the challenges I solved:
 - [Riddle Registry (Forensics)](https://wendyyy21.github.io/ctf-writeup/ctf/picomini-cmu-africa/Forensics/riddle-registry/)
 - [Flag in Flame (Forensics)](https://wendyyy21.github.io/ctf-writeup/ctf/picomini-cmu-africa/Forensics/flag-in-flame/)
 - [Hidden in Plainsight (Forensics)](https://wendyyy21.github.io/ctf-writeup/ctf/picomini-cmu-africa/Forensics/hidden-in-plainsight/)
-- [Corrupted Files (Forensics)](https://wendyyy21.github.io/ctf-writeup/ctf/picomini-cmu-africa/Forensics/corrupted-files/)
+- [Corrupted File (Forensics)](https://wendyyy21.github.io/ctf-writeup/ctf/picomini-cmu-africa/Forensics/corrupted-file/)
 - [Input Injection 1 (Binary Exploitation)](https://wendyyy21.github.io/ctf-writeup/ctf/picomini-cmu-africa/BinaryExploitation/input-injection-1/)
 - [Input Injection 2 (Binary Exploitation)](https://wendyyy21.github.io/ctf-writeup/ctf/picomini-cmu-africa/BinaryExploitation/input-injection-2/)
