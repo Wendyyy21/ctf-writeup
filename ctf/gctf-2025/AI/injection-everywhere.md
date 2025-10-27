@@ -5,8 +5,6 @@ categories: [CTF, AI]
 permalink: /ctf/gctf-2025/AI/injection-everywhere/
 ---
 
-# Injection Everywhere
-
 ## Description:
 Until today, we can still see injection. WHY?? (Now with GIRL API)
 
