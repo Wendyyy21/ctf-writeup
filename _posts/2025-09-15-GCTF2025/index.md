@@ -6,7 +6,6 @@ categories: [CTF, online]
 tags: [REHACK]
 ---
 
-# Girls in CTF (GCTF) 2025 Writeups
 
 Here are the challenges I solved:
 - [Injection Everywhere (AI)](https://wendyyy21.github.io/ctf-writeup/ctf/gctf-2025/AI/injection-everywhere/)
