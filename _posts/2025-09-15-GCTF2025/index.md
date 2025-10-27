@@ -9,7 +9,7 @@ tags: [REHACK]
 # Girls in CTF (GCTF) 2025 Writeups
 
 Here are the challenges I solved:
-- [Injection Everywhere (AI)](/ctf/gctf-2025/AI/injection-everywhere/)
+- [Injection Everywhere (AI)](https://wendyyy21.github.io/ctf-writeup/ctf/gctf-2025/AI/injection-everywhere/)
 - [Pirates (OSINT)](./OSINT/pirates.md)
 - [Akami's Heart (Web)](./Web/akamis-heart.md)
 - [Vibe Coded Web Application (Web)](./Web/vibe-coded-web-app.md)
