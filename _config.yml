@@ -22,6 +22,8 @@ github_username: username
 minimal_mistakes_skin: dark
 search: true
 feed: false
+atom_feed:
+  hide: true
 
 # Build settings
 markdown: kramdown
