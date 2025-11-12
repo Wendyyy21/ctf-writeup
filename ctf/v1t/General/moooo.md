@@ -15,8 +15,9 @@ I really like **Cows **
 3. Extract the contents, and we get two txt files (`extract.txt` and `TRYYY.txt`). Using `cat` shows that both files have the same text: TRY HARDERRR, but `TRYYY.txt` has a lot of whitespace at the end. 
 4. The large amount of whitespace definitely has some purpose/meaning, especially when we have another file with the exact same content but without the extra whitespace. I found something called whitespace steganography, which conceals text using spaces and tabs.
 ![Whitespace steganography](images/moo-2.png)
-5. And I found a tool that can reveal such messages, `stegsnow`. Use it to extract the hidden message, which is the flag.
+5. And I found a tool that can reveal such messages, `stegsnow`. Use it to extract the hidden message, which is the flag. <br>
 ![Found the flag](images/moo-3.png)
 
 ## Flag:
+
 v1t{D0wn_Th3_St3gN0_R4bb1t_H0l3}
