@@ -12,8 +12,9 @@ Flag Format = HUNTER{Charity_Name-123456}
 
 ## Solution:
 1. First, I used Google to search the CEO of Securium Solutions, which is Neha Singh. I found her LinkedIn profile as one of the results. 
-2. I looked through her posts, and found this post a few months ago: https://www.linkedin.com/posts/securiumsolutions_securiumsolutions-eldercare-humankindness-activity-7342903944706236417-6KI8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFtmDtkB1PE0F2rWysdxzTeR4Y_-vDFpQDg which shows the employees visiting an old age home. 
+2. I looked through her posts, and found this post a few months ago: [LinkedIn post](https://www.linkedin.com/posts/securiumsolutions_securiumsolutions-eldercare-humankindness-activity-7342903944706236417-6KI8) which shows the employees visiting an old age home. 
 3. At the beginning of the video, there is a banner that shows the name and pincode of the charity. 
 
 ## Flag:
+
 HUNTER{Apni_Sanskirti_Charitable_Foundation-201301}
