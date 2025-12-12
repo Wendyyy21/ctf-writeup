@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "The Whistle Blower"
+title: "The Laundromat"
 categories: [CTF, OSINT]
-permalink: /ctf/IBOH-2025/OSINT/the-whistle-blower/
+permalink: /ctf/IBOH-2025/OSINT/the-laundromat/
 ---
 
 ## Description:
@@ -22,4 +22,5 @@ Flag Format: BOH25{numberOfCryptoExAddresses_finalWalletAddress} (Case Sensitive
 Note: at one point, the funds are transferred to 2 different accounts then transferred to the same account again. Only distinct accounts should be counted.
 
 ## Flag:
+
 BOH25{5_0x2221754606f6743537a805b097B40F8eBBDC9Db0}
