@@ -2,7 +2,7 @@
 layout: single
 title: "Oneliner"
 categories: [CTF, cryptography]
-permalink: /ctf/rectf-2025/Cryptography/oneliner/
+permalink: /ctf/RECTF-2025/Cryptography/oneliner/
 ---
 
 ## Description:
@@ -44,4 +44,5 @@ print((lambda n: n.to_bytes((n.bit_length()+7)//8,"big").decode())(__import__("m
 ```
 
 ## Flag:
+
 RE:CTF{GCD_70_tH3_Re5Cu3!!}
