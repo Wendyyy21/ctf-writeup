@@ -12,7 +12,7 @@ I heard there is a function somewhere to find small roots...
 Difficulty: Hard
 
 ## Solution:
-1. We are given the modulus (N), 4 coefficients \\( c_0, c_1, c_2, c_3 \\), the exponent ($n$) and the ciphertext ($enc$), and we need to find the plaintext (flag). The challenge description talks about a function to find small roots, which refers to the **Coppersmith attack**, a method used to find the small roots of a polynomial mod a large integer. Since the flag is a short ASCII string, it is small compared to N, so we can use Coppersmith attack here.
+1. We are given the modulus (N), 4 coefficients ( $ c_0, c_1, c_2, c_3 $ ), the exponent ($n$) and the ciphertext ($enc$), and we need to find the plaintext (flag). The challenge description talks about a function to find small roots, which refers to the **Coppersmith attack**, a method used to find the small roots of a polynomial mod a large integer. Since the flag is a short ASCII string, it is small compared to N, so we can use Coppersmith attack here.
 2. We have $enc = P(flag)\ mod\ N$, where $P(x) = c_0 + c_1*flag + c_2*flag^2 + c_3*flag^3 mod\ N$. Rearranging, $f(x) = P(x) – enc\ mod\ N$, where the root of $f(x)$ is the flag.
 3. Coppersmith attack works if the roots are smaller than $N^(1/d)$, where $d$ is the polynomial degree. Since this is a cubic polynomial (d = 3), this method can be used.
 4. With that, I used the Sage script below to retrieve the flag. It reconstructs the polynomial and uses `small_roots` to recover the plaintext:
@@ -58,4 +58,5 @@ for b in range(100):
 ## Flag:
 
 HEX{sagemath_is_a_wonderful_and_magical_world}
+
 
