@@ -12,7 +12,7 @@ Difficulty: Easy
 
 ## Solution:
 1. The website has 3 input fields: name, Christmas wish and custom template. The hint given in the website says that there’s a special template expression syntax that is related to where Santa lives. 
-2. I tried `\{{north_pole\}}` and `\{{northpole\}}`, but these are not recognised. So, I decided to look for clues in the source code and found this in `main.rs`. <br>
+2. I tried {% raw %}{{north_pole}} and {{northpole}}{% endraw %}, but these are not recognised. So, I decided to look for clues in the source code and found this in `main.rs`. <br>
 ![Magic regex found!](images/christmas-wishlist-1.png)
 3. The magic syntax needed for RCE is `{$north_pole <some command>$}`. Since I’m already diving into the source code, I continued studying it and saw some blocked keywords:
 ![Blocked keywords](images/christmas-wishlist-2.png)
@@ -23,4 +23,5 @@ Difficulty: Easy
 ## Flag:
 
 HEX{s4nt4s_m4g1c_t3mpl4t3_l34k5_s3cr3ts}
+
 
