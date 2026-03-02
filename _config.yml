@@ -29,6 +29,7 @@ atom_feed:
 markdown: kramdown
 kramdown:
   math_engine: mathjax
+mathjax: true
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: /:categories/:title/
