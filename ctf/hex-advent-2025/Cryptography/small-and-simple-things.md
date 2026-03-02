@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Small and Simple Things"
+math: true
 categories: [CTF, cryptography]
 permalink: /ctf/hex-advent/Cryptography/small-and-simple-things/
 ---
@@ -55,4 +56,5 @@ for b in range(100):
 ```
 
 ## Flag:
+
 HEX{sagemath_is_a_wonderful_and_magical_world}
