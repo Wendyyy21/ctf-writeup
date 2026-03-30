@@ -15,6 +15,7 @@ The flag is right in front of you; just slightly encrypted. All you have to do i
 3. In the main program, each byte of the flag is XORed with each byte of the secret, and the output is displayed.  <br>
 ![main](images/hidden-cipher-1-2.png) <br>
 4. To reverse this, XOR the output with the secret again to get the flag.
+   
 ```
 enc = "235a201d702015483b1d412b265d3313501f0c072d135f0d2002302d01176b0a221657412e"
 secret = "S3Cr3t"
