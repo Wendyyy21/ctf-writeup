@@ -10,7 +10,8 @@ A message was encrypted using a shared secret... but it looks like one side of t
 
 ## Solution:
 1. We are given a Python script simulating a Diffie-Hellman key exchange along with the values of a generator `g`, a prime modulus `p`, a public key `A` and a private key `b`. These values allow us to calculate the shared key, which is A^b mod p. 
-2. To decrypt the message, we just need to XOR the encrypted message with the shared key. Here is the Python script I used: <br>
+2. To decrypt the message, we just need to XOR the encrypted message with the shared key. Here is the Python script I used:
+   
 ```
 g = 2
 p = 1956569462124144120927516603113307342059707107041776251382271693463937241063820255709629168777374737667208516650717581395312046085361630148846651320257607452794725002805439585363971052627026550220846887477426409169351921723292099694133435829849883814647198776499989842804756329565447939544979714484098170215811901531
