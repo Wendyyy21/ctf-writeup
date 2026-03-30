@@ -9,7 +9,7 @@ permalink: /ctf/picoctf-2026/General/bytemancy-2/
 Can you conjure the right bytes?
 
 ## Solution:
-1. This time, we need to send raw hex bytes. Using `pwntools`, <br>
+1. This time, we need to send raw hex bytes. Using `pwntools`, 
 ```
 #!/usr/bin/python
 from pwn import *
