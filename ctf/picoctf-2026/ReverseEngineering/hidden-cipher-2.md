@@ -14,6 +14,7 @@ The flag is right in front of you... kind of. You just need to solve a basic mat
 2. The `encode_flag` function multiplies each character in the flag with the answer to the math question and outputs the integers.  <br>
 ![main](images/hidden-cipher-2-2.png) <br>
 3. To reverse this, divide the integers with the answer to the math question and convert each value to its corresponding ASCII character to get the flag.
+   
 ```
 enc = [896, 840, 792, 888, 536, 672, 560, 984, 872, 416, 928, 832, 760, 784, 408, 832, 392, 880, 800, 760, 792, 392, 896, 832, 408, 912, 760, 808, 440, 392, 416, 456, 408, 392, 448, 1000]
 ans = 8
