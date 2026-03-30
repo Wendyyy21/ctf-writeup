@@ -44,7 +44,6 @@ with open("creds-dump.txt", "r") as creds_file:
             print("Sleeping...")
             time.sleep(31)  
 ```
-3. Using this script, I found the flag in the HTTP response received. <br>
 ![Flag](images/fool-the-lockout-1.png)
 
 ## Flag:
