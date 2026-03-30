@@ -15,7 +15,8 @@ Can you bypass the rate limit, log in, and capture the flag?
 
 ## Solution:
 1. From the source code, each IP address is allowed 10 failed attempts in 30 seconds before being locked out for 120 seconds. I tried changing the source IP address using the `X-Forwarded-For` header but it did not work. 
-2. I wrote a Python script to send 9 requests then sleep for 31 seconds before sending another 9 requests. <br>
+2. I wrote a Python script to send 9 requests then sleep for 31 seconds before sending another 9 requests.
+   
 ```
 import requests
 import time
