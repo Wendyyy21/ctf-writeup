@@ -13,7 +13,8 @@ There was a recent data breach at a famous department store, in which the login 
 
 ## Solution:
 1. The credentials dump contains a pair of username and password separated by a semicolon (;) on each line and has 1500 lines. 
-2. I wrote a Python script to connect to the service and try each combination. However, trying all 1500 sets of credentials takes more than 15 minutes (and each instance only lasts for 15 minutes), so I used multithreading to speed up the process. <br>
+2. I wrote a Python script to connect to the service and try each combination. However, trying all 1500 sets of credentials takes more than 15 minutes (and each instance only lasts for 15 minutes), so I used multithreading to speed up the process.
+   
 ```
 import concurrent.futures
 import threading
