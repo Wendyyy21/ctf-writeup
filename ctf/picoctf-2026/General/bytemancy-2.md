@@ -10,6 +10,7 @@ Can you conjure the right bytes?
 
 ## Solution:
 1. This time, we need to send raw hex bytes. Using `pwntools`, 
+
 ```
 #!/usr/bin/python
 from pwn import *
@@ -17,7 +18,7 @@ from pwn import *
 host = "lonely-island.picoctf.net"
 port = 58621
  
-p = remote(host, port) 
+p = remote(host, port)
 payload = b"\xFF" * 3
 p.sendline(payload)
 p.interactive()
