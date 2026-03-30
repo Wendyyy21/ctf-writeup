@@ -12,7 +12,8 @@ A message has been encrypted using RSA. The public key is gone… but someone mi
 1. The file given is an image of a key. Upon viewing the file's metadata, I saw a long hex comment. <br>
 ![Long hex comment](images/stegorsa-1.png) <br><br>
 2. I decoded the hex string and obtained an RSA private key. 
-3. I saved the RSA private key as `key.pem` and used a Python script to decrypt the message. <br>
+3. I saved the RSA private key as `key.pem` and used a Python script to decrypt the message.
+   
 ```
 from Crypto.PublicKey import RSA
 from Crypto.Util.number import *
@@ -26,7 +27,6 @@ with open("flag.enc", "rb") as f:
 plaintext = pow(ciphertext, key.d, key.n)
 print(long_to_bytes(plaintext))
 ```
-<br>
 
 ![Found flag](images/stegorsa-2.png)
 
