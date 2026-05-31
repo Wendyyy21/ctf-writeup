@@ -7,7 +7,7 @@ var store = [
     {%- if forloop.last -%}
       {%- assign l = true -%}
     {%- endif -%}
-    {%- assign docs = c.docs -%}
+    {%- assign docs = site.ctf -%}
     {%- for doc in docs -%}
       {%- if doc.header.teaser -%}
         {%- capture teaser -%}{{ doc.header.teaser }}{%- endcapture -%}
