@@ -21,6 +21,8 @@ twitter_username: username
 github_username: username
 minimal_mistakes_skin: dark
 search: true
+search_provider: lunr
+search_full_content: true
 feed: false
 atom_feed:
   hide: true

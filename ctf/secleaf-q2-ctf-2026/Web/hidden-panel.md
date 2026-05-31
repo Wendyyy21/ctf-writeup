@@ -3,6 +3,7 @@ layout: single
 title: "Hidden_panel"
 categories: [CTF, web]
 permalink: /ctf/secleaf-q2-ctf-2026/Web/hidden-panel/
+search: true
 ---
 
 ## Description:
