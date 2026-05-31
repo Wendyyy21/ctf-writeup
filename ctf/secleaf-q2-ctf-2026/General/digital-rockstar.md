@@ -15,15 +15,16 @@ Flag Format: SecLeaf{}
 
 ## Solution:
 1. We are given some code: <br>
+
 ```
-Midnight is Sec
-Shadow is leaf
-Chaos is poetry 
-Neon is is fun
+    Midnight is Sec
+    Shadow is leaf
+    Chaos is poetry 
+    Neon is is fun
 
-Dreams are Midnight with Shadow with Chaos with Neon
+    Dreams are Midnight with Shadow with Chaos with Neon
 
-Say Dreams
+    Say Dreams
 ```
 2. From the name of the challenge, I thought that the code given is written in the Rockstar programming language, so I used an online compiler to get the output `8464544`.
 3. I wrapped this in the flag format and submitted it, but it was wrong.
