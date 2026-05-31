@@ -14,7 +14,7 @@ Can you understand this digital rockstar? <br>
 Flag Format: SecLeaf{}
 
 ## Solution:
-1. We are given some code:
+1. We are given some code: <br>
 ```
 Midnight is Sec
 Shadow is leaf
