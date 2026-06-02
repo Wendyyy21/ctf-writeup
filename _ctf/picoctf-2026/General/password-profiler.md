@@ -10,7 +10,7 @@ We intercepted a suspicious file from a system, but instead of the password itse
 
 ## Solution:
 1. In the password checker source code, a comment mentions that the wordlist should be generated using CUPP. <br>
-![Source code comment](images/password-profiler-1.png)
+![Source code comment]({{"/assets/ctf/picoctf-2026/General/password-profiler-1.png" | relative_url}})
 2. With the given personal details about the target, I used [CUPP (Common User Passwords Profiler)](https://github.com/mebus/cupp) to generate a custom password list. 
 3. After renaming the file to match the filename expected by the checker, which is `passwords.txt`, I ran the password checker to get the flag.
 

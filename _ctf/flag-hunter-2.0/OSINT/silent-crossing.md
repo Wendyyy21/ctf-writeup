@@ -11,7 +11,7 @@ Flag Format = HUNTER{Bridge_Name-Ctiy-Country}
 
 ## Solution:
 1. We are given the following image:
-![image](images/silent-crossing-1.png)
+![image]({{"/assets/ctf/flag-hunter-2.0/OSINT/silent-crossing-1.png" | relative_url}})
 2. A quick search using Google Lens tells us that this is the Napier Bridge located in Chennai, India. 
 
 ## Flag:

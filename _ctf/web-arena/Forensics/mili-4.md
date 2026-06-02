@@ -11,7 +11,7 @@ This is a disaster solve it
 ## Solution:
 1. We are given a png file. When I run `file` to identify the file type, it says "data". This is strange since the file is obviously an image, which hints that the file’s magic number may be corrupted. 
 2. Search online for the magic number of a png file, and use `hexeditor` to fix the corrupted bytes.
-![Viewing file header](images/mili-4-1.png)
+![Viewing file header]({{"/assets/ctf/web-arena/Forensics/mili-4-1.png" | relative_url}})
 3. Open the fixed image file to get the flag.
 
 ## Flag:

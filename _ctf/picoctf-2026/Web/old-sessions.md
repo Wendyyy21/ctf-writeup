@@ -10,9 +10,9 @@ Proper session timeout controls are critical for securing user accounts. If a us
 
 ## Solution:
 1. After creating an account and logging in, I saw a tweet about an interesting page at `/sessions`. Here, I found two cookies: one for admin and one for the current user. <br>
-![Cookies](images/old-sessions-1.png)
+![Cookies]({{"/assets/ctf/picoctf-2026/Web/old-sessions-1.png" | relative_url}})
 2. Using the web browser developer tools, I created a new cookie with the given value for admin and accessed the homepage again, which contained the flag. <br>
-![Flag](images/old-sessions-2.png)
+![Flag]({{"/assets/ctf/picoctf-2026/Web/old-sessions-2.png" | relative_url}})
 
 ## Flag:
 picoCTF{s3t_s3ss10n_3xp1rat10n5_77b6684a}

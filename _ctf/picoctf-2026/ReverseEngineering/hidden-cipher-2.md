@@ -10,9 +10,9 @@ The flag is right in front of you... kind of. You just need to solve a basic mat
 
 ## Solution:
 1. Based on the decompiled source code in Ghidra, the program randomly generates a simple math question and uses the answer to encode the flag. <br>
-![Math time](images/hidden-cipher-2-1.png) <br><br>
+![Math time]({{"/assets/ctf/picoctf-2026/ReverseEngineering/hidden-cipher-2-1.png" | relative_url}}) <br><br>
 2. The `encode_flag` function multiplies each character in the flag with the answer to the math question and outputs the integers.  <br>
-![main](images/hidden-cipher-2-2.png) <br>
+![main]({{"/assets/ctf/picoctf-2026/ReverseEngineering/hidden-cipher-2-2.png" | relative_url}}) <br>
 3. To reverse this, divide the integers with the answer to the math question and convert each value to its corresponding ASCII character to get the flag.
    
 ```

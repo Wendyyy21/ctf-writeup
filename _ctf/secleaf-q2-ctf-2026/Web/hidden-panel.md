@@ -14,7 +14,7 @@ Flag format: SecLeaf{}
 ## Solution:
 1. I accessed the website using a browser and viewed the source code but didn't find anything interesting.
 2. Next, I visited `robots.txt` and found the flag. <br>
-![Robots](images/hidden-panel-1.png) <br>
+![Robots]({{"/assets/ctf/secleaf-q2-ctf-2026/Web/hidden-panel-1.png" | relative_url}}) <br>
 
 ## Flag:
 SecLeaf{r0b0ts_sh0uldnt_t4lk}

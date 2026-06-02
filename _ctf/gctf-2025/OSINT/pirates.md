@@ -14,7 +14,7 @@ Up to four decimal only.
 
 ## Solution:
 1. We are given an image.
-![image](images/pirates.png)
+![image]({{"/assets/ctf/gctf-2025/OSINT/pirates.png" | relative_url}})
 2. A quick search with Google Lens tells us that the photo was taken at Fort Margherita, Kuching.
 3. Use Google Earth to obtain the coordinates.
 

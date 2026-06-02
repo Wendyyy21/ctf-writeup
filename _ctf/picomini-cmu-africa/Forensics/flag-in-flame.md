@@ -10,7 +10,7 @@ The SOC team discovered a suspiciously large log file after a recent breach. Whe
 
 ## Solution:
 1. We are given a text file with a long base64 string. Decode the string and convert the output into an image file. 
-![Decoding and converting](images/flag-in-flame-1.png)
+![Decoding and converting]({{"/assets/ctf/picomini-cmu-africa/Forensics/flag-in-flame-1.png" | relative_url}})
 2. Open the image file. We see some text in it. Use CyberChef to decode the text (from Hex), and we get the flag.
 
 ## Flag:

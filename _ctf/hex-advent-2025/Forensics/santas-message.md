@@ -20,12 +20,12 @@ Difficulty: Easy
 - HMAC-MD5: NTLMSSP_AUTH packet > SMB2 > Session Setup Response > Security Blob > GSS-API > Simple Protected Negotiation > negTokenTarg > NTLM Secure Service Provider > NTLM Response > NTLMv2 Response > NTProofStr (or just the first 16 bytes (32 hex digits) of NTLMv2Response)
 - NTLMv2Response: NTLMSSP_AUTH packet > SMB2 > Session Setup Response > Security Blob > GSS-API > Simple Protected Negotiation > negTokenTarg > NTLM Secure Service Provider > NTLM Response > NTLMv2 Response
 4. Combine them to form the hash: `username::domain:challenge:HMAC-MD5:NTLMv2Response` and save it in a txt file. <br>
-![Hash](images/santas-message-1.png)
+![Hash]({{"/assets/ctf/hex-advent-2025/Forensics/santas-message-1.png" | relative_url}})
 5. Then, I used `hashcat` with the infamous wordlist `rockyou.txt` to crack it and got the password: **alliwantforchristmasisyou**. 
 6. Now, here’s where things got tricky (for me). According to the writeup I mentioned earlier, I need to use a Python script to get a random session key, then use the session ID and this random session key to decrypt the SMB traffic. I tried that, but my packets remained encrypted. <br>
-![The wrong way](images/santas-message-2.png)
+![The wrong way]({{"/assets/ctf/hex-advent-2025/Forensics/santas-message-2.png" | relative_url}})
 7. I searched for more writeups on the THM challenge and found [a YouTube tutorial](https://www.youtube.com/watch?v=3-pMkmHg8Ag) which simply uses the password to decrypt the SMB packets. I inserted the password into Wireshark > Edit > Preferences > Protocol > NTLMSSP, and I successfully decrypted the SMB packets. <br>
-![Insert password here](images/santas-message-3.png)
+![Insert password here]({{"/assets/ctf/hex-advent-2025/Forensics/santas-message-3.png" | relative_url}})
 8. Lastly, I exported an SMB object file (File > Export Objects > SMB > select the one with `/flag.txt`) and got a text file containing the flag.
 
 ## Flag:

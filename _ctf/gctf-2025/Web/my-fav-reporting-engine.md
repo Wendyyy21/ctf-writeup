@@ -12,7 +12,7 @@ During preparation for CPTS, Kyla decided to build a custom reporting engine to 
 1. The given website converts user input into a pdf, provided that the user enters correct LaTeX syntax.
 2. After entering arbitrary input, we see from the compilation log displayed that \write18 is enabled, which means we can exploit this vulnerability to execute commands.
 3. Using \immediate\write18{find / -name "*flag*"}, we are able to find a text file named flag.txt. <br>
-![Finding the text file](images/my-fav-reporting-engine.png)
+![Finding the text file]({{"/assets/ctf/gctf-2025/Web/my-fav-reporting-engine.png" | relative_url}})
 4. Use \input{/flag.txt} to read the file, and we get the flag.
 
 ## Flag:

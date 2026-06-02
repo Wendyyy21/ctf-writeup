@@ -13,9 +13,9 @@ Flag Format: SecLeaf{}
 
 ## Solution:
 1. I tried to open the image file but failed, so I used `file` to check the file type and found that it's actually a ZIP archive! <br>
-![File type](images/important-1.png)
+![File type]({{"/assets/ctf/secleaf-q2-ctf-2026/Forensics/important-1.png" | relative_url}})
 2. I used `mv` to change the file extension to `.zip` then unzipped the archive to retrieve the flag. <br>
-![Unzip archive](images/important-2.png)
+![Unzip archive]({{"/assets/ctf/secleaf-q2-ctf-2026/Forensics/important-2.png" | relative_url}})
 
 ## Flag:
 SecLeaf{extensions_can_lie}

@@ -12,9 +12,9 @@ Flag format: SecLeaf{}
 
 ## Solution:
 1. We are given an executable file which is supposed to contain a hard coded flag. I ran `strings wrong_turn` and found UPX strings, indicating that binary has been packed using UPX. <br>
-![UPX strings](images/wrong-turn-1.png) <br>
+![UPX strings]({{"/assets/ctf/secleaf-q2-ctf-2026/General/wrong-turn-1.png" | relative_url}}) <br>
 2. I unpacked the file using `upx -d wrong_turn`, then used `strings wrong_turn` to find the flag.
-![Found flag](images/wrong-turn-2.png) <br>
+![Found flag]({{"/assets/ctf/secleaf-q2-ctf-2026/General/wrong-turn-2.png" | relative_url}}) <br>
 
 ## Flag:
 SecLeaf{hardcoded_secrets_again}

@@ -11,7 +11,7 @@ This binary performs a few self‑checks and “keeps secrets”. Hidden inside 
 ## Solution:
 1. Open the file in Ghidra and analyse the assembly. We find a function which performs all the decryption-related work. 
 2. The fourth argument of the `EVP_DecryptUpdate` function is the ciphertext, and the fourth and fifth arguments of `EVP_DecryptInit_ex` are the key and iv respectively. Using these pieces of information, we can write a Python script to decrypt the ciphertext. 
-![Decrypting ciphertext](images/promise-1.png)
+![Decrypting ciphertext]({{"/assets/ctf/flag-hunter-2.0/ReverseEngineering/promise-1.png" | relative_url}})
 
 ## Flag:
 HUNTER{d41d8cd98f00b204e9800998ecf8427e}

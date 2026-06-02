@@ -15,7 +15,7 @@ Example: University of Economics Ho Chi Minh City => v1t{UEH}
 
 ## Solution:
 1. We are given an image of a university.
-![image](images/among-usniversity-1.png)
+![image]({{"/assets/ctf/v1t/OSINT/among-usniversity-1.png" | relative_url}})
 2. A quick search with Google Lens tells us that it is the University of Information Technology (UIT) in Ho Chi Minh, Vietnam. So the acronym would be UIT.
 
 ## Flag:

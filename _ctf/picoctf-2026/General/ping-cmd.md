@@ -11,7 +11,7 @@ Can you make the server reveal its secrets? It seems to be able to ping Google D
 ## Solution:
 1. The service only allows us to ping 8.8.8.8. However, I was able to execute two commands at a time by concatenating them using `|`. 
 2. I listed the contents of the current directory and found a text file containing the flag. <br>
-![Concatenating commands](images/ping-cmd-1.png)
+![Concatenating commands]({{"/assets/ctf/picoctf-2026/General/ping-cmd-1.png" | relative_url}})
 
 ## Flag:
 picoCTF{p1nG_c0mm@nd_3xpL0it_su33essFuL_d1fdbdd0}

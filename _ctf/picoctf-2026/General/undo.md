@@ -11,7 +11,7 @@ Can you reverse a series of Linux text transformations to recover the original f
 ## Solution:
 We need to give the Linux command for a series of transformations.
 Here are the correct answers: <br><br>
-![Answers](images/undo-1.png) <br>
+![Answers]({{"/assets/ctf/picoctf-2026/General/undo-1.png" | relative_url}}) <br>
 Note: `tr` (translate) can be used to replace characters in text with another character, including reversing ROT13.
 
 ## Flag:

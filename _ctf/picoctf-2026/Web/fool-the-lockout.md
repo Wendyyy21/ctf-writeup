@@ -44,7 +44,7 @@ with open("creds-dump.txt", "r") as creds_file:
             print("Sleeping...")
             time.sleep(31)  
 ```
-![Flag](images/fool-the-lockout-1.png)
+![Flag]({{"/assets/ctf/picoctf-2026/Web/fool-the-lockout-1.png" | relative_url}})
 
 ## Flag:
 picoCTF{f00l_7h4t_l1m1t3r_6f501f28}

@@ -12,7 +12,7 @@ Flag format : RE:CTF{MD5} --case sensitive
 
 ## Solution:
 1. From the given link, we are given the MD5 hash. <br>
-![Hash](images/start-1.png)
+![Hash]({{"/assets/ctf/RECTF-2025/CTI/start-1.png" | relative_url}})
 
 ## Flag:
 RE:CTF{051e7640abc8297c3aee642e7fc87b72}

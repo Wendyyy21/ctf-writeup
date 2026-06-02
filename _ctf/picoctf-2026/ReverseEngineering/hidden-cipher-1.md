@@ -11,7 +11,7 @@ The flag is right in front of you; just slightly encrypted. All you have to do i
 ## Solution:
 1. Using `strings`, I found that the binary was packed using Ultimate Packer for eXecutables (UPX), which is used to reduce the file size of programs. 
 2. I unpacked the binary using `upx -d hiddencipher` before opening it in Ghidra. From the decompiled source code, the program has a secret variable with the value "S3Cr3t".  <br>
-![Secret](images/hidden-cipher-1-1.png) <br>
+![Secret]({{"/assets/ctf/picoctf-2026/ReverseEngineering/hidden-cipher-1-1.png" | relative_url}}) <br>
 3. In the main program, each byte of the flag is XORed with each byte of the secret, and the output is displayed.  <br>
 ![main](images/hidden-cipher-1-2.png) <br>
 4. To reverse this, XOR the output with the secret again to get the flag.

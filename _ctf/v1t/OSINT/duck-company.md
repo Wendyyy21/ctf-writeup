@@ -12,7 +12,7 @@ Flag format: v1t{example.com}
 
 ## Solution:
 1. We are given a picture of a wooden duck dressed as a magician for Halloween.
-![image](images/duck-company-1.png)
+![image]({{"/assets/ctf/v1t/OSINT/duck-company-1.png" | relative_url}})
 2. Searching using Google Lens reveals that it is from a store called DCUK.
 
 ## Flag:

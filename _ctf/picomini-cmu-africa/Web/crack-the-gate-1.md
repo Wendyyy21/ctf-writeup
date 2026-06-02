@@ -11,9 +11,9 @@ We’re in the middle of an investigation. One of our persons of interest, ctf p
 ## Solution:
 1. We are given a login page and the email used to login, but not the password. The challenge description mentioned the developer leaving a secret way in, so let’s inspect the page first. 
 2. We see an interesting gibberish comment, and a reminder to remove it before pushing to production. 
-![Interesting comment](images/crack-the-gate-1-1.png)
+![Interesting comment]({{"/assets/ctf/picomini-cmu-africa/Web/crack-the-gate-1-1.png" | relative_url}})
 3. This mysterious string must be the secret we need. Using cyberchef’s magic function to try to decode this message, we don’t get any result. One of the clues provided mentioned rotating each letter by 13, which means ROT13. Use the ROT13 function in cyberchef, and we get a message to use the HTTP header X-Dev-Access to bypass the authentication. 
-![Decoding using CyberChef](images/crack-the-gate-1-2.png)
+![Decoding using CyberChef]({{"/assets/ctf/picomini-cmu-africa/Web/crack-the-gate-1-2.png" | relative_url}})
 4. Use BurpSuite to modify the request and add the required header. Then, we get the flag!
 
 ## Flag:

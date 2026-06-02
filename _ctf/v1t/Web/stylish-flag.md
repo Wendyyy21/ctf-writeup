@@ -13,7 +13,7 @@ Are you a front end dev ?
 2. We see a div with the class "flag" that is set to hidden. Remove the hidden attribute, and we see some faint text appearing in the background. 
 3. In the styles applied to this div, we can see that opacity has been set to 0.05. Disable this selection, and the flag appears. 
 4. But the h1 text is still blocking the flag, so add a new style to the heading, setting opacity to 0. Now, we can see the flag clearly (it’s upside down).
-![Found the flag](images/stylish-flag-1.png)
+![Found the flag]({{"/assets/ctf/v1t/Web/stylish-flag-1.png" | relative_url}})
 
 ## Flag:
 v1t{H1D30UT_CSS}

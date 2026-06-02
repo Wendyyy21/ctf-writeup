@@ -10,7 +10,7 @@ A message has been encrypted using RSA. The public key is gone… but someone mi
 
 ## Solution:
 1. The file given is an image of a key. Upon viewing the file's metadata, I saw a long hex comment. <br>
-![Long hex comment](images/stegorsa-1.png) <br><br>
+![Long hex comment]({{"/assets/ctf/picoctf-2026/Cryptography/stegorsa-1.png" | relative_url}}) <br><br>
 2. I decoded the hex string and obtained an RSA private key. 
 3. I saved the RSA private key as `key.pem` and used a Python script to decrypt the message.
    
@@ -28,7 +28,7 @@ plaintext = pow(ciphertext, key.d, key.n)
 print(long_to_bytes(plaintext))
 ```
 
-![Found flag](images/stegorsa-2.png)
+![Found flag]({{"/assets/ctf/picoctf-2026/Cryptography/stegorsa-2.png" | relative_url}})
 
 ## Flag:
 picoCTF{rs4_k3y_1n_1mg_4eedd678}

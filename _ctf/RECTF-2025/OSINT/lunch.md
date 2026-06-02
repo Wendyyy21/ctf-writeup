@@ -11,7 +11,7 @@ Flag-format : RE:CTF{what.3.words}
 
 ## Solution:
 1. We are given the following image: <br>
-![Fooddd](images/lunch-1.png)
+![Fooddd]({{"/assets/ctf/RECTF-2025/OSINT/lunch-1.png" | relative_url}})
 2. I tried to perform a reverse search using Google Lens but couldn't find any convincing matches. 
 3. The food is clearly Chinese food, so I thought searching in Chinese social media may be a better idea. I used Xiaohongshu to reverse search this image and found one image with very similar food and crockery. The restaurant is Hai Kee Fried Beef Bun at Petaling Street, KL. 
 4. But the flag wants 3 words, so I tried many variations: Hai.Kee.KL, Hai.Kee.Malaysia, Haikee.Petaling.Street but all were incorrect. As I was running out of attempts, I created a support ticket (the organisers mentioned that we can check our flag with them before submitting on the CTFd platform), and the challenge creator told me to look at the flag format "very very very carefully".

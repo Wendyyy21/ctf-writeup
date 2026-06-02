@@ -13,10 +13,9 @@ You’re given a seemingly ordinary JPG image. Something is tucked away out of s
 2. Use CyberChef to decode this string, and we see that decoding from base64 gives “steghide:” followed by another base64-encoded string. 
 3. Decode this second string, which would be the passphrase when using `steghide` on the image file. 
 4. Use `steghide` to view more info about the image. We see an embedded file named “flag.txt”.
-![Viewing more info](images/hidden-in-plainsight-1.png)
+![Viewing more info]({{"/assets/ctf/picomini-cmu-africa/Forensics/hidden-in-plainsight-1.png" | relative_url}})
 6. Extract this embedded file and view the contents of the file to get the flag.
-![Extracting embedded file](images/hidden-in-plainsight-2.png)
+![Extracting embedded file]({{"/assets/ctf/picomini-cmu-africa/Forensics/hidden-in-plainsight-2.png" | relative_url}})
 
 ## Flag:
-
 picoCTF{h1dd3n_1n_1m4g3_871ba555}
