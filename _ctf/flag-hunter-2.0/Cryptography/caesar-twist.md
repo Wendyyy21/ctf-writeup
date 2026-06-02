@@ -13,7 +13,7 @@ A simple page hides deeper secrets. Encoded clues lead to hidden paths, but the 
 2. Use CyberChef to decode them, and we get `/hunter` and `/get-flag`. 
 3. Combine them to get the path to the next page of the website (`/hunter/get-flag`). We are given an encrypted message with the flag. 
 4. Use CyberChef ROT13 Brute Force to get the flag.
-![Encoded comments in source code](/assets/ctf/flag-hunter-2.0/Cryptography/caesar-twist-1.png)
+![Encoded comments in source code]({{"/assets/ctf/flag-hunter-2.0/Cryptography/caesar-twist-1.png" | relative_url}})
 
 ## Flag:
 HUNTER{sequential_caesar_cipher_FLAGHUNTER2.0}
